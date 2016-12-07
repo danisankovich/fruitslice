@@ -61,8 +61,11 @@ $(document).ready(() => {
   const startAction = () => {
     $('#fruit1').attr('src', fruits[chooseRandom()].path)
     $('#fruit1').show()
-    // $('#fruit1').append(`<img src=${fruits.apple} class="fruit" />`)
+    $('#fruit1').css({'left': Math.round(Math.random() * 550), 'top': '-50px'})
   }
+  /**
+    picks a random number, and assigns it to a value to randomly generate fruits
+  */
   const chooseRandom = () => {
     const randNumber = Math.floor(Math.random() * 100);
     if (randNumber < 10) {

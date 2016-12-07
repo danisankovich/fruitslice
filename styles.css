@@ -58,6 +58,8 @@ html {
   text-align: center;
   font-family: cursive, sans-serif;
   color: black;
+  position: relative;
+  overflow: hidden;
 }
 #instruction {
   width: 450px;
@@ -121,6 +123,7 @@ html {
   display: none;
 }
 .fruit {
-  height: 90px;
+  height: 110px;
   display: none;
+  position: absolute;
 }
